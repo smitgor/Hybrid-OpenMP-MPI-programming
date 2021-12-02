@@ -1,17 +1,17 @@
 # Hybrid-OpenMP-MPI-programming
 
 
-##Compile
+## Compile
 ```
 mpicc -fopenmp hybrid.c -o hybrid
 ```
 
-##Define the number of thread
+## Define the number of thread
 ```
 export OMP_NUM_THREADS=4
 ```
 
-##Run 
+## Run 
 ```
 mpirun -np 4 -x OMP_NUM_THREAD ./hybrid
 ```
